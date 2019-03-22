@@ -1,191 +1,150 @@
-<!DOCTYPE html >
-<!-- #1 #structure #document -->
+<!DOCTYPE html>
 <html>
-<head>
 
-    <!-- #1 #structure #title -->
+<head>
+    <!-- GLOBAL-->
     <title>chatter|app</title>
 
-    <!-- We need to specify the character encoding, since we use chinese characters -->
+    <!-- specification – character encoding – chinese characters -->
     <meta charset="UTF-8">
 
-    <!-- #2 #css #elements -->
-    <style>
+    <!-- CSS stylesheet source -->
+    <link rel="stylesheet" href="style.css"/>
 
-        /* #2 #colorful #palette is:
-          * Background: #F5F5F5 (GREY 100)
-          * Primary Text: black
-
-          * Primary color: #3F51B5 (INDIGO)
-          * Primary color_text : white
-          * Accent color: #CDDC39 (LIME)
-          * Accent color_text: black
-          */
-
-        /*global styles */
-        * {
-            /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            /* #2 #colorful #background */
-            background-color: #F5F5F5;
-        }
-
-        h1 {
-            /* #2 #colourful #app-bar */
-            background-color: #3F51B5;
-            color: white;
-        }
-
-        button {
-            /* #2 #colourful #plusfive */
-            background-color: #CDDC39;
-            color: black;
-            /* #2 #font capital #letters */
-            text-transform: uppercase;
-        }
-
-
-        /*styles for channel area*/
-        h2 {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-
-        /*styles for chat area*/
-        p {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-
-        strong {
-            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
-            text-transform: uppercase;
-        }
-
-        h3 {
-            /* #2 #font #metadata is now medium */
-            font-size: medium;
-        }
-
-        em {
-            /* #2 #font #remaining overrides the default italic appearance of em elements*/
-            font-size: larger;
-            font-style: normal;
-        }
-
-    </style>
-
+    <!--font roboto-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 
+
 <body>
-
-<!-- channel area -->
-<!-- #1 #channels #app-bar -->
-<h1>chatter|app</h1>
-
-<!-- #1 #channels #topics -->
-<h2>#Yummy</h2>
-<h2>#SevenContinents</h2>
-<h2>#KillerApp</h2>
-<h2>#FirstPersonOnMars</h2>
-<h2>#Octoberfest</h2>
-
-<!-- #1 #channels #buttons -->
-<button>new</button>
-<button>trending</button>
-<button>favorites</button>
-
-
-<!-- chat area -->
-<!-- #1 #chat #name -->
-<h1>#SevenContinents
-    <!-- #1 #chat #location is wrapped in small tag-->
-    <small>by
-        <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-        <strong>cheeses.yard.applies</strong>
-    </small>
+<!-- App Bar with duck image-->
+<h1>
+    <img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus image" style="height: 56px"> chatter|app
 </h1>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>cheeses.yard.applies</strong>
-    Wed, June 20th, 13:37
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>15 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>What's the place you folks call home?</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+<!-- Channel List -->
+<ul>
+    <li>
+        #Yummy
+        <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="filled star image">
+    </li>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>truck.cotton.zone</strong>
-    Wed, June 20th, 13:39
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>4 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>BRISBANE! Hang loose!</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+    <li class="selected">
+        #SevenContinents
+        <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="filled star image">
+    </li>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>thus.best.dishes</strong>
-    Wed, June 20th, 14:02
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>12 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>The big apple.</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+    <li>
+        #KillerApp
+        <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="filled star image">
+    </li>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>driveway.helper.magazine</strong>
-    Wed, June 20th, 14:02
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>7 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>Eu sou um Carocas.</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+    <li>
+        #FirstPersonOnMars <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="filled star image">
+    </li>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>escapes.pitch.saucepan</strong>
-    Wed, June 20th, 14:07
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>14 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>Greetings from the western cape!</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+    <li>#Octoberfest
+        <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="unfilled star image">
+    </li>
+</ul>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time  -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>meanings.identity.pays</strong>
-    Wed, June 20th, 04:08
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>15 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>北京</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+<!-- Tab Bar -->
+<div id="tabBar">
+    <button class="selected">
+        <img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="ightbulb icon">
+        <br>new
+    </button>
+
+    <button>
+        <img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire icon">
+        <br>trending
+    </button>
+    
+    <button>
+        <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star icon">
+        <br>favorites
+    </button>
+</div>
+
+
+<!-- Messages / Chats -->
+<!-- Messages - names-->
+<h1>#SevenContinents
+    <!-- location is wrapped in small tag-->
+    <small>by
+        <!-- bold font, locations need extra element, use strong for w3w locations -->
+        <strong>cheeses.yard.applies</strong>
+    </small>
+    <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="filled star image">
+</h1>
+
+<!-- Messages - metadata contains location, weekday, day, and time -->
+<div class="messageOwn">
+    <h3> <!-- head of message containing w3w-location, metadata and TimeToLive -->
+        <a href="https://map.what3words.com/cheeses.yard.applies" target="_blank">
+            <strong>cheeses.yard.applies</strong></a>
+        <span class="messageMeta">Wed, June 20th, 13:37</span>
+        <span class="messageTTL">15 min. left</span>
+    </h3>
+    <p class="messageText">What's the place you folks call home?</p>
+    <button class="messageButton">+5 min.</button>
+</div>
+
+<div class="message">
+    <h3> <!-- head of message containing w3w-location, metadata and TimeToLive -->
+        <a href="https://map.what3words.com/truck.cotton.zone" target="_blank">
+            <strong>truck.cotton.zone</strong></a>
+        <span class="messageMeta">Wed, June 20th, 13:39</span>
+        <span class="messageTTL">4 min. left</span>
+    </h3>
+    <p class="messageText">BRISBANE! Hang loose!</p>
+    <button class="messageButton">+5 min.</button>
+</div>
+
+<div class="message">
+    <h3> <!-- head of message containing w3w-location, metadata and TimeToLive -->
+        <a href="https://map.what3words.com/thus.best.dishes." target="_blank">
+            <strong>thus.best.dishes</strong></a>
+        <span class="messageMeta">Wed, June 20th, 14:02</span>
+        <span class="messageTTL">12 min. left</span>
+    </h3>
+    <p class="messageText">The big apple</p>
+    <button class="messageButton">+5 min.</button>
+</div>
+
+<div class="message">
+    <h3> <!-- head of message containing w3w-location, metadata and TimeToLive -->
+        <a href="https://map.what3words.com/driveway.helper.magazine" target="_blank">
+            <strong>driveway.helper.magazine</strong></a>
+        <span class="messageMeta">Wed, June 20th, 14:02</span>
+        <span class="messageTTL">7 min. left</span>
+    </h3>
+    <p class="messageText">Eu sou um Carocas.</p>
+    <button class="messageButton">+5 min.</button>
+</div>
+
+<div class="message">
+    <h3> <!-- head of message containing w3w-location, metadata and TimeToLive -->
+        <a href="https://map.what3words.com/escapes.pitch.saucepan" target="_blank">
+            <strong>tescapes.pitch.saucepan</strong></a>
+        <span class="messageMeta">Wed, June 20th, 14:07</span>
+        <span class="messageTTL">14 min. left</span>
+    </h3>
+    <p class="messageText">Greetings from the western cape!</p>
+    <button class="messageButton">+5 min.</button>
+</div>
+
+<div class="message">
+    <h3> <!-- head of message containing w3w-location, metadata and TimeToLive -->
+        <a href="https://map.what3words.com/meanings.identity.pays" target="_blank">
+            <strong>meanings.identity.pays</strong></a>
+        <span class="messageMeta">Wed, June 20th, 04:08</span>
+        <span class="messageTTL">15 min. left</span>
+    </h3>
+    <p class="messageText">北京</p>
+    <button class="messageButton">+5 min.</button>
+</div>
 
 </body>
+
 </html>

@@ -1,0 +1,150 @@
+/* CSS ELEMENTS */
+
+/* color palette:
+  * Background: #F5F5F5 (GREY 100)
+  * Primary Text: black
+  * Primary color: #3F51B5 (INDIGO)
+  * Primary color_text : white
+  * Accent color: #CDDC39 (LIME)
+  * Accent color_text: black
+  */
+
+/*global styles */
+
+/* GLOBAL */
+
+* {
+    /* font */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background */
+    background-color: #F5F5F5;
+}
+
+button, a {
+    /*capital letter font */
+    text-transform: uppercase;
+}
+
+
+/* App Bar */
+
+h1 {
+    /* colored app bar */
+    background-color: #3F51B5;
+    color: white;
+}
+
+/* Channel List*/
+
+li {
+    /* channels and messages */
+    background-color: white;
+    padding: 16px;
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 48px;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+li.selected {
+    border-left: 4px solid #3F51B5;
+    color: #3F51B5;
+}
+
+li img {
+    /*centers icons*/
+    vertical-align: middle;
+}
+
+/* Tab Bar */
+
+#tabbar {
+    background-color: white;
+}
+
+#tabBar button {
+    text-align: center;
+    background-color: white;
+    border: none;
+    font-size: 13px;
+    height: 72px;
+    padding: 16px;
+    width: 33%;
+}
+
+#tabBar img {
+    margin: auto;
+    margin-bottom: 4px;
+}
+
+#tabBar button.selected {
+    border-bottom: 4px solid #3F51B5;
+    color: #3F51B5;
+}
+
+/* Messages Chat */
+
+
+/* message container*/
+.messageOwn {
+    width: 80%;
+    padding: 16px 0px 16px 0px;
+    margin-left: 17.5%;
+    margin-bottom: 8px;
+}
+
+.message {
+    width: 80%;
+    margin-left: 2.5%;
+    margin-bottom: 8px;
+    padding: 16px 0px 16px 0;
+}
+
+h3 * {
+    /* link color black */
+    color: black;
+}
+
+.message h3 a {
+    color: black;
+}
+
+.messageMeta {
+    font-size: medium;
+}
+
+.messageText {
+    padding: 16px;
+}
+
+.messageButton {
+    background-color: #CDDC39;
+    color: black;
+    text-transform: uppercase;
+}
+
+.messageTTL {
+    font-size: larger;
+    font-style: normal;
+}
+
+/* channels and chat */
+p {
+    background-color: white;
+}
+
+strong {
+    /* what 3 words locations uppercase */
+    text-transform: uppercase;
+}
+
+ul {
+    background-color: white;
+    list-style-type: none;
+}
+
